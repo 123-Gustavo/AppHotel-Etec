@@ -8,6 +8,13 @@
     
     <VerticalStackLayout VerticalOptions="CenterAndExpand"
                          Padding="10">
+
+        <VerticalStackLayout Margin="5">
+            <Grid RowDefinitions="Auto" ColumnDefinitions="Auto, Auto, Auto" ColumnSpacing="10">
+                <Button Grid.Row="0" Grid.Column="0" Text="Voltar" Clicked="Button_Clicked"/>
+            </Grid>
+        </VerticalStackLayout>
+
         <Label Text="Calculo da Diária" 
                FontFamily="Kalam"
                FontSize="50"

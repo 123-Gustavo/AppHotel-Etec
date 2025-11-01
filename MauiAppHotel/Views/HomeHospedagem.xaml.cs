@@ -1,8 +1,8 @@
 namespace MauiAppHotel.Views;
 
-public partial class ContratacaoHospedagem
+public partial class HomeHospedagem : ContentPage
 {
-	public ContratacaoHospedagem()
+	public HomeHospedagem()
 	{
 		InitializeComponent();
 	}
@@ -14,9 +14,12 @@ public partial class ContratacaoHospedagem
             Button botao = (Button)sender;
             if (botao != null)
             {
-                if (botao.Text == "Voltar")
+                if(botao.Text == "Sobre")
                 {
-                    App.Current.MainPage = new Views.HomeHospedagem();
+                    App.Current.MainPage = new Views.SobreHospedagem();
+                }else if(botao.Text == "Diária")
+                {
+                    App.Current.MainPage = new Views.ContratacaoHospedagem();
                 }
             }
         }
@@ -25,5 +28,4 @@ public partial class ContratacaoHospedagem
             DisplayAlert("Ops", ex.Message, "Fechar");
         }
     }
-
 }

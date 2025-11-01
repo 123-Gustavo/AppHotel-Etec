@@ -1,8 +1,8 @@
 namespace MauiAppHotel.Views;
 
-public partial class ContratacaoHospedagem
+public partial class SobreHospedagem : ContentPage
 {
-	public ContratacaoHospedagem()
+	public SobreHospedagem()
 	{
 		InitializeComponent();
 	}
@@ -25,5 +25,4 @@ public partial class ContratacaoHospedagem
             DisplayAlert("Ops", ex.Message, "Fechar");
         }
     }
-
 }
