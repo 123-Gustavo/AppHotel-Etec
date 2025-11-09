@@ -16,6 +16,7 @@
 
         <Button Text="Sobre" Margin="10" Clicked="Button_Clicked" x:Name="button_sobre"/>
         <Button Text="Diária" Margin="10" Clicked="Button_Clicked" x:Name="button_diaria"/>
+        <Button Text="Suas Suites" Margin="10" Clicked="Button_Clicked" x:Name="button_suassuites"/>
         
     </VerticalStackLayout>
 </ContentPage>

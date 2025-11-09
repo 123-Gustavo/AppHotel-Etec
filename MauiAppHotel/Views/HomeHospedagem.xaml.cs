@@ -14,12 +14,17 @@ public partial class HomeHospedagem : ContentPage
             Button botao = (Button)sender;
             if (botao != null)
             {
-                if(botao.Text == "Sobre")
+                switch (botao.Text)
                 {
-                    App.Current.MainPage = new Views.SobreHospedagem();
-                }else if(botao.Text == "Diária")
-                {
-                    App.Current.MainPage = new Views.ContratacaoHospedagem();
+                    case "Sobre":
+                        App.Current.MainPage = new Views.SobreHospedagem();
+                        break;
+                    case "Diária":
+                        App.Current.MainPage = new Views.ContratacaoHospedagem();
+                        break;
+                    case "Suas Suites":
+                        App.Current.MainPage = new Views.SuasSuites();
+                        break;
                 }
             }
         }
